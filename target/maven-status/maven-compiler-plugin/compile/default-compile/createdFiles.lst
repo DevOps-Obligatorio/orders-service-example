@@ -1,0 +1,6 @@
+uy/edu/ort/devops/ordersserviceexample/domain/OrderStatus.class
+uy/edu/ort/devops/ordersserviceexample/endpoints/OrdersEndpoint.class
+uy/edu/ort/devops/ordersserviceexample/dtos/Product.class
+uy/edu/ort/devops/ordersserviceexample/logic/OrdersLogic.class
+uy/edu/ort/devops/ordersserviceexample/dtos/PaymentStatus.class
+uy/edu/ort/devops/ordersserviceexample/OrdersServiceExampleApplication.class
