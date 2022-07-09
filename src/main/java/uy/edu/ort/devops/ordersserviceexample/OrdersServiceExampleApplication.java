@@ -11,9 +11,10 @@ import uy.edu.ort.devops.ordersserviceexample.logic.OrdersLogic;
 public class OrdersServiceExampleApplication {
 
 	public static void main(String[] args) {
-		OrdersLogic.setPaymentsServiceUrl(args[0]);
-		OrdersLogic.setShippingServiceUrl(args[1]);
-		OrdersLogic.setProductsServiceUrl(args[2]);
+		
+		OrdersLogic.setPaymentsServiceUrl("http://localhost:8080");
+		OrdersLogic.setShippingServiceUrl("http://localhost:8081");
+		OrdersLogic.setProductsServiceUrl("http://localhost:8082");
 
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
 	}

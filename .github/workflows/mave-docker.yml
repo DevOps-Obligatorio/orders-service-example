@@ -98,6 +98,6 @@ jobs:
         # push it to ECR so that it can
         # be deployed to ECS.
         ls -la
-        docker build --build-arg JAR_FILE=orders-service-example.jar --platform=linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+        docker build --build-arg JAR_FILE=./target/orders-service-example-0.0.1-SNAPSHOT-spring-boot.jar --platform=linux/amd64 -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
