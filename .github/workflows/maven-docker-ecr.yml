@@ -35,7 +35,11 @@ jobs:
   test:
     name: test
     runs-on: ubuntu-latest
+    outputs:
+        output-sonar-orders: ${{ output.sonar.orders }}
     steps:
+      - name: Step1
+        id: sonarcloud
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
@@ -60,8 +64,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn verify sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.projectKey=DevOps-Obligatorio_orders-service-example -Dsonar.organization=devops-obligatorio-ms
+      - continue-on-error: false
 
-
+#Build Java application
   build:
     name: build
     runs-on: ubuntu-latest
