@@ -12,11 +12,12 @@ public class OrdersServiceExampleApplication {
 
 	public static void main(String[] args) {
 		
-		OrdersLogic.setPaymentsServiceUrl("http://localhost:8080");
-		OrdersLogic.setShippingServiceUrl("http://localhost:8081");
-		OrdersLogic.setProductsServiceUrl("http://localhost:8082");
+		OrdersLogic.setPaymentsServiceUrl("http://localhost:8081");
+		OrdersLogic.setShippingServiceUrl("http://localhost:8082");
+		OrdersLogic.setProductsServiceUrl("http://localhost:8080");
 
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
+		
 		System.out.println("Testing Sonar");
 		System.out.println("Testing Sonar");
 		System.out.println("Testing Sonar");
