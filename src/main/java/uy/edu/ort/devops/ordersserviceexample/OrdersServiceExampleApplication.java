@@ -17,6 +17,27 @@ public class OrdersServiceExampleApplication {
 		OrdersLogic.setProductsServiceUrl("http://localhost:8082");
 
 		SpringApplication.run(OrdersServiceExampleApplication.class, args);
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
+		System.out.println("Testing Sonar");
 	}
 
 	@Bean
