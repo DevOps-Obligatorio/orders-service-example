@@ -27,7 +27,7 @@
 on:
   push:
     branches:
-      - Testing
+      - Develop
 
 name: Push to Amazon ECR
 
