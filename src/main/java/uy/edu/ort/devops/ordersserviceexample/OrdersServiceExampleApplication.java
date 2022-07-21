@@ -41,15 +41,15 @@ public class OrdersServiceExampleApplication {
 		System.out.println("Testing Sonar");
 	}
 	
-	public int sonarFailure(){
-		int a = 10;
-		int b = 50;
-		if (b<a){
-			b++;
-			return a;
-		}
-		return a;
-	}
+	// public int sonarFailure(){
+	// 	int a = 10;
+	// 	int b = 50;
+	// 	if (b<a){
+	// 		b++;
+	// 		return a;
+	// 	}
+	// 	return a;
+	// }
 
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder) {
